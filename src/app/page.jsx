@@ -29,7 +29,7 @@ export default function Home() {
           <>
             <Navbar className={Styles.navBarPosition} />
             <LogoAnimation />
-            <SciFiButton className={Styles.SciFiButton1Position} caption={"Join Us!"} link={"hello"} />
+            <SciFiButton className={Styles.SciFiButton1Position} caption={"Join Us!"} link={"components/Loader"} />
           </>
         )}
       </div>
