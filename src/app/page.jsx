@@ -4,7 +4,6 @@ import Image from "next/image";
 import Styles from "./page.module.scss";
 import Loader from "./components/Loader/page";
 import Navbar from "./components/NavBar/page";
-import SciFiButton from "./components/SciFiButton/page";
 import LogoAnimation from "./components/LogoAnimation/page";
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
           <>
             <Navbar className={Styles.navBarPosition} />
             <LogoAnimation />
-            <SciFiButton className={Styles.SciFiButton1Position} caption={"Join Us!"} link={"components/Loader"} />
           </>
         )}
       </div>
