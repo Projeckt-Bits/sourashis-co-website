@@ -13,7 +13,7 @@ export default function Home() {
     // Simulate a loading delay of 1 second
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 1000);
 
     // Cleanup the timer if the component unmounts
     return () => clearTimeout(timer);
@@ -23,12 +23,29 @@ export default function Home() {
     <>
       <div className={Styles.main}>
         {isLoading ? (
-          <Loader className={Styles.LoaderPosition}/>
+          <Loader className={Styles.LoaderPosition} />
         ) : (
-          <>
+          <div className={Styles.pageWrapper}>
             <Navbar className={Styles.navBarPosition} />
             <LogoAnimation />
-          </>
+            <div className={Styles.pageContent}>
+              <div className={Styles.tagLineWrapper}>
+                <h1 className={Styles.tagLine}>
+                  never&nbsp;&nbsp; wait&nbsp;&nbsp; for&nbsp;&nbsp;
+                  the&nbsp;&nbsp; right&nbsp;&nbsp; time...
+                </h1>
+                <h2 className={Styles.carpeDiem}>carpe diem</h2>
+                <p className={Styles.carpeDiemDesc}>
+                  /ˌkɑːpeɪ&apos;diːɛm,ˌkɑːpeɪ&apos;dʌɪɛm/
+                  <br />
+                  exclamation: carpe diem
+                  <br />
+                  used to urge someone to make the most of the present time and
+                  give little thought to the future
+                </p>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </>
