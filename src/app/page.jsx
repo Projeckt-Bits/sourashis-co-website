@@ -21,27 +21,28 @@ export default function Home() {
 
   return (
     <>
-      <div className={Styles.main}>
+      <div className={Styles.Main}>
         {isLoading ? (
           <Loader className={Styles.LoaderPosition} />
         ) : (
-          <div className={Styles.pageWrapper}>
-            <Navbar className={Styles.navBarPosition} />
+          <div className={Styles.PageWrapper}>
+            <Navbar className={Styles.NavBarPosition} />
             <LogoAnimation />
-            <div className={Styles.pageContent}>
-              <div className={Styles.tagLineWrapper}>
-                <h1 className={Styles.tagLine}>
+            <div className={Styles.PageContent}>
+              <div className={Styles.TagLineWrapper}>
+                <h1 className={Styles.TagLine}>
                   never&nbsp;&nbsp; wait&nbsp;&nbsp; for&nbsp;&nbsp;
                   the&nbsp;&nbsp; right&nbsp;&nbsp; time...
                 </h1>
-                <h2 className={Styles.carpeDiem}>carpe diem</h2>
-                <p className={Styles.carpeDiemDesc}>
+                <h2 className={Styles.CarpeDiem}>carpe diem</h2>
+                <p className={Styles.CarpeDiemDesc}>
                   /ˌkɑːpeɪ&apos;diːɛm,ˌkɑːpeɪ&apos;dʌɪɛm/
                   <br />
                   exclamation: carpe diem
                   <br />
-                  used to urge someone to make the most of the present time and
-                  give little thought to the future
+                  used to urge someone to make the most of the
+                  <br />
+                  present time and give little thought to the future
                 </p>
               </div>
             </div>
